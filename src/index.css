@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +65,179 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+:root {
+  --bg: #071226;
+  --card: #041017;
+  --accent: #00b4d8;
+  --muted: #9fb3bd;
+  --glass: rgba(255, 255, 255, 0.03);
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  font-family: Inter, system-ui, Segoe UI, Roboto, Arial;
+  background: linear-gradient(180deg, #071226, #031018);
+  color: #e6f3f5;
+}
+.app-root {
+  min-height: 100vh;
+}
+
+/* fixed header space */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 20px 80px;
+}
+
+/* Header styles (the header component also defines these) */
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(0, 0, 0, 0.04)
+  );
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 20px;
+  align-items: start;
+  margin-top: 18px;
+}
+.hero h1 {
+  margin: 0 0 8px;
+  font-size: clamp(20px, 3vw, 32px);
+}
+.lead {
+  color: var(--muted);
+}
+.btn {
+  background: linear-gradient(90deg, var(--accent), #0ea5a3);
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  color: #011;
+  font-weight: 800;
+  text-decoration: none;
+}
+.aside {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.quick {
+  color: var(--muted);
+}
+.contact-strong {
+  font-weight: 800;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+.item-title {
+  color: #dff6fb;
+  font-weight: 800;
+}
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+.tile {
+  padding: 22px;
+  border-radius: 10px;
+  background: #061016;
+  color: #dff6fb;
+  text-align: center;
+  font-weight: 800;
+}
+
+.contact-section {
+  margin-top: 20px;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 18px 0;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 980px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .tiles {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Header fixed */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  background: rgba(7, 18, 38, 0.75);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--accent), #0ea5a3);
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  color: #021;
+}
+.brand-title {
+  font-weight: 900;
+}
+.brand-sub {
+  color: var(--muted);
+  font-size: 13px;
+}
+.nav a {
+  margin-left: 12px;
+  color: var(--muted);
+  font-weight: 700;
+}
+.nav a:hover {
+  color: #fff;
+}
+
+/* push content under header */
+.container {
+  padding-top: 120px;
 }
