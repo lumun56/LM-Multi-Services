@@ -11,12 +11,12 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="contact-form">
       <input name="name" placeholder="Your name" required />
-      <input name="contact" placeholder="Email or phone" required />
+      <input name="contact" placeholder="Phone" required />
       <select name="service" required>
         <option value="">Choose service</option>
-        <option>Electrical service</option>
-        <option>IT / Device support</option>
-        <option>Handyman / Plumbing</option>
+        <option>Electrical Services</option>
+        <option>Professional IT Support Services</option>
+        <option>Other Handyman Services</option>
       </select>
       <textarea
         name="details"
@@ -25,7 +25,7 @@ export default function ContactForm() {
       />
       <div style={{ display: "flex", gap: 10 }}>
         <button className="btn" type="submit">
-          Send Request
+          Submit Request
         </button>
         <button
           type="button"
