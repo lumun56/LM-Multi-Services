@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "../App.css";
+import "../index.css";
 
 export default function ContactForm() {
   const [sent, setSent] = useState(false);
