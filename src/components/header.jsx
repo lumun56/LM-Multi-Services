@@ -30,11 +30,19 @@ export default function Header() {
           Home
         </NavLink>{" "}
         |{" "}
+        <NavLink to="/services" style={navLinkStyles}>
+          Services
+        </NavLink>{" "}
+        |{" "}
+        <NavLink to="/portfolio" style={navLinkStyles}>
+          Portfolio
+        </NavLink>{" "}
+        |{" "}
         <NavLink to="/about" style={navLinkStyles}>
           About
         </NavLink>{" "}
         |{" "}
-        <NavLink to="/ContactForm" style={navLinkStyles}>
+        <NavLink to="/contact" style={navLinkStyles}>
           Contact
         </NavLink>
       </nav>

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../App.css";
 import "../index.css";
 
-export default function ContactForm() {
+export default function Contact() {
   const [sent, setSent] = useState(false);
   function handleSubmit(e) {
     e.preventDefault();

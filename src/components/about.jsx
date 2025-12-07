@@ -1,4 +1,4 @@
-export default function Portfolio() {
+export default function About() {
   return (
     <section className="hero card">
       <div>

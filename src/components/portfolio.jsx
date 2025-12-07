@@ -1,4 +1,7 @@
-import React from "react";
+import "../App.css";
+import "../index.css";
+import ecp from "../assets/IMG-20240930-WA0029.jpg";
+import nwimage from "../assets/29.jpg";
 
 export default function Portfolio() {
   return (

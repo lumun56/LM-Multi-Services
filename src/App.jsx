@@ -2,10 +2,12 @@ import { useState } from "react";
 import "./App.css";
 import { Routes, Route, Link } from "react-router-dom";
 import Header from "./components/header";
-import ContactForm from "./components/ContactForm";
+import Contact from "./components/contact";
 import Footer from "./components/footer";
-import Portfolio from "./components/about";
-import home from "./pages/home";
+import Portfolio from "./components/portfolio";
+import Home from "./components/home";
+import Services from "./components/services";
+import About from "./components/about";
 
 // Style function for active links
 const navLinkStyles = ({ isActive }) => ({
@@ -24,13 +26,14 @@ function App() {
 
       <main className="container">
         <Routes>
-          <Route path="/" element={<home />} />
-          <Route path="/about" element={<Portfolio />} />
-          <Route path="/ContactForm" element={<ContactForm />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
       <Footer />
-      <section id="contactus"></section>
     </div>
   );
 }
