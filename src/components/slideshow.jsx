@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from "react";
+import img1 from "../assets/IMG-20240930-WA0029.jpg";
+import img2 from "../assets/29.jpg";
+import img3 from "../assets/31.jpg";
 // import "../slideshow.css";
 
 export default function Slideshow() {
   const slides = [
     {
-      img: "../assets/IMG-20240930-WA0029.jpg",
+      img: img1,
     },
     {
-      img: "../assets/29.jpg",
+      img: img2,
     },
     {
-      img: "../assets/31.jpg",
+      img: img3,
     },
   ];
 

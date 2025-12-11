@@ -4,11 +4,11 @@ import { Routes, Route, Outlet } from "react-router-dom";
 import Header from "./components/header";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
-import Portfolio from "./components/portfolio";
 import Home from "./components/home";
 import Services from "./components/services";
 import About from "./components/about";
 import Electrical from "./components/electrical";
+import ITServices from "./components/itservices";
 
 // Style function for active links
 const navLinkStyles = ({ isActive }) => ({
@@ -30,11 +30,13 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />}>
             <Route path="electrical" element={<Electrical />} />
+            <Route path="itservices" element={<ITServices />} />
           </Route>
-          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+
+        <Outlet />
       </main>
       <Footer />
     </div>

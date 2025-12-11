@@ -1,10 +1,10 @@
 import "../index.css";
 import "../App.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 // Style function for active links
 const navLinkStyles = ({ isActive }) => ({
-  color: isActive ? "#007bff" : "#00ff04ff",
+  color: isActive ? "#d9f82aff" : "#00ff04ff",
   textDecoration: isActive ? "none" : "underline",
   fontWeight: isActive ? "bold" : "normal",
   padding: "5px 10px",
@@ -12,33 +12,38 @@ const navLinkStyles = ({ isActive }) => ({
 
 export default function Services() {
   return (
-    <section id="services" className="services-grid">
-      <div className="card">
-        <h3 className="item-title">
-          <nav style={{ marginBottom: "20px" }}>
-            <NavLink to="/electrical" style={navLinkStyles}>
+    <>
+      <section id="services" className="services-grid">
+        <div className="card">
+          <h3 className="item-title">
+            <NavLink to="./electrical" style={navLinkStyles}>
               Electrical
             </NavLink>{" "}
-          </nav>
-        </h3>
-        <p className="lead">
-          Residential wiring, repair & rewiring, service panels installations &
-          upgrade.
-        </p>
-      </div>
-      <div className="card">
-        <h3 className="item-title">IT & Device Support</h3>
-        <p className="lead">
-          Computer & phone repair & support, network wiring & setup, tech
-          support.
-        </p>
-      </div>
-      <div className="card">
-        <h3 className="item-title">Handyman Services</h3>
-        <p className="lead">
-          General repairs, plumbing, appliance diagnostics.
-        </p>
-      </div>
-    </section>
+          </h3>
+          <p className="lead">
+            Residential wiring, repair & rewiring, service panels installations
+            & upgrade.
+          </p>
+        </div>
+        <div className="card">
+          <h3 className="item-title">
+            <NavLink to="./itservices" style={navLinkStyles}>
+              IT Services
+            </NavLink>{" "}
+          </h3>
+          <p className="lead">
+            Computer & Devices: repair & support; Network wiring & setup;
+            Security Camera installation; Tech Support.
+          </p>
+        </div>
+        <div className="card">
+          <h3 className="item-title">Handyman Services</h3>
+          <p className="lead">
+            General Works, Plumbing, Appliance Diagnostics.
+          </p>
+        </div>
+      </section>
+      <Outlet />
+    </>
   );
 }

@@ -33,10 +33,6 @@ export default function Header() {
           Services
         </NavLink>{" "}
         |{" "}
-        <NavLink to="/portfolio" style={navLinkStyles}>
-          Portfolio
-        </NavLink>{" "}
-        |{" "}
         <NavLink to="/about" style={navLinkStyles}>
           About
         </NavLink>{" "}
