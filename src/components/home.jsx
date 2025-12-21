@@ -1,5 +1,5 @@
 import Slideshow from "./slideshow.jsx";
-// import "../slideshow.css";
+import "../slideshow.css";
 
 export default function Home() {
   return (

@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import img1 from "../assets/Electric/SD & ATS.jpg";
-import img2 from "../assets/Electric/P3.jpg";
-import img3 from "../assets/Electric/FL1.jpg";
-import img4 from "../assets/Electric/FL5.jpg";
-import img5 from "../assets/Network/1.jpg";
-import img6 from "../assets/Network/6.jpg";
-import img7 from "../assets/SC1.jpg";
-// import "../slideshow.css";
+import img1 from "../assets/Electric/SD & ATS.webp";
+import img2 from "../assets/Electric/P3.webp";
+import img3 from "../assets/Electric/FL1.webp";
+import img4 from "../assets/Electric/FL5.webp";
+import img5 from "../assets/Network/1.webp";
+import img6 from "../assets/Network/6.webp";
+import img7 from "../assets/SC1.webp";
+import "../slideshow.css";
 
 export default function Slideshow() {
   const slides = [

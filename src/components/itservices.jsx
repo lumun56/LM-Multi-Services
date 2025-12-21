@@ -1,12 +1,12 @@
 import "../App.css";
 import "../index.css";
-import itimg1 from "../assets/Network/2.jpeg";
-import itimg2 from "../assets/Network/3.jpeg";
-import itimg3 from "../assets/Network/4.jpg";
-import itimg4 from "../assets/Network/5.jpg";
-import itimg5 from "../assets/Network/1.jpg";
-import cimg1 from "../assets/SC1.jpg";
-import cimg2 from "../assets/SC2.jpg";
+import itimg1 from "../assets/Network/2.webp";
+import itimg2 from "../assets/Network/3.webp";
+import itimg3 from "../assets/Network/4.webp";
+import itimg4 from "../assets/Network/5.webp";
+import itimg5 from "../assets/Network/1.webp";
+import cimg1 from "../assets/SC1.webp";
+import cimg2 from "../assets/SC2.webp";
 
 export default function ITServices() {
   return (
