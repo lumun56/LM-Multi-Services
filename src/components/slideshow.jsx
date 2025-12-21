@@ -1,7 +1,11 @@
-import React, { useState, useEffect } from "react";
-import img1 from "../assets/IMG-20240930-WA0029.jpg";
-import img2 from "../assets/29.jpg";
-import img3 from "../assets/31.jpg";
+import { useState, useEffect } from "react";
+import img1 from "../assets/Electric/SD & ATS.jpg";
+import img2 from "../assets/Electric/P3.jpg";
+import img3 from "../assets/Electric/FL1.jpg";
+import img4 from "../assets/Electric/FL5.jpg";
+import img5 from "../assets/Network/1.jpg";
+import img6 from "../assets/Network/6.jpg";
+import img7 from "../assets/SC1.jpg";
 // import "../slideshow.css";
 
 export default function Slideshow() {
@@ -14,6 +18,18 @@ export default function Slideshow() {
     },
     {
       img: img3,
+    },
+    {
+      img: img4,
+    },
+    {
+      img: img5,
+    },
+    {
+      img: img6,
+    },
+    {
+      img: img7,
     },
   ];
 

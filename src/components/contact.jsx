@@ -1,53 +1,41 @@
-import React, { useState } from "react";
 import "../App.css";
 import "../index.css";
+import WAicon from "../assets/whatsapp-icon.png";
 
 export default function Contact() {
-  const [sent, setSent] = useState(false);
-  function handleSubmit(e) {
-    e.preventDefault();
-    // local-only demo submission
-    setSent(true);
-    setTimeout(() => setSent(false), 5000);
-  }
   return (
-    <form onSubmit={handleSubmit} className="contact-form">
-      <input name="name" placeholder="Your name" required />
-      <input name="contact" placeholder="Phone" required />
-      <select name="service" required>
-        <option value="">Choose service</option>
-        <option>Electrical Services</option>
-        <option>Professional IT Support Services</option>
-        <option>Other Handyman Services</option>
-      </select>
-      <textarea
-        name="details"
-        rows="4"
-        placeholder="Details, location, best time"
-      />
-      <div style={{ display: "flex", gap: 10 }}>
-        <button className="btn" type="submit">
-          Submit Request
-        </button>
-        <button
-          type="button"
-          onClick={(e) => e.target.closest("form").reset()}
-          style={{
-            background: "transparent",
-            border: "1px solid rgba(255,255,255,0.04)",
-            color: "#9fb3bd",
-            padding: "10px",
-            borderRadius: 10,
-          }}
-        >
-          Clear
-        </button>
-      </div>
-      {sent && (
-        <div style={{ color: "#0ea5a3", fontWeight: 800, marginTop: 8 }}>
-          Request prepared locally — add backend to submit.
-        </div>
-      )}
-    </form>
+    <div className="contact">
+      <h1>Contact Us</h1>
+      <h3>
+        For inquiries,
+        <br />
+        Or to request a service,
+        <br />
+        please reach out to us:
+      </h3>
+      <br />
+      <h4>
+        Call or Text:
+        <br />
+        (+501) 615-3090
+      </h4>
+      <br />
+      <h4>
+        Whatsapp:{" "}
+        <a href="https://wa.me/5016153090">
+          <img src={WAicon} width={15} height={15}></img>
+          <br /> <br />
+          (+501) 615-3090
+        </a>
+      </h4>
+      <br />
+      <h4>
+        Email:
+        <br /> <a href="mailto:lu.mun.56@gmail.com">lu.mun.56@gmail.com</a>
+        <br /> <br />
+        Or:
+        <br /> <a href="mailto:lu.mun.56@outlook.com">lu.mun.56@outlook.com</a>
+      </h4>
+    </div>
   );
 }

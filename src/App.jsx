@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { Routes, Route, Outlet } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/header";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
@@ -35,8 +35,6 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-
-        <Outlet />
       </main>
       <Footer />
     </div>
