@@ -22,7 +22,11 @@ export default function Contact() {
       <br />
       <h4>
         Whatsapp:{" "}
-        <a href="https://wa.me/5016153090">
+        <a
+          href="https://wa.me/5016153090"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={WAicon} width={15} height={15}></img>
           <br /> <br />
           (+501) 615-3090
